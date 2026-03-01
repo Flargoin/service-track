@@ -1,0 +1,21 @@
+.section {
+    margin-bottom: rem(24);
+    @media(min-width: rem(320)) {
+        &:not(:first-child) {
+            margin-top: rem(25);
+        }
+    }
+
+    @media(min-width: rem(769)) {
+        &:not(:first-child) {
+            margin-top: rem(32);
+        }
+    }
+
+    &--dark {
+        padding: rem(30) 0;
+        background-color: #000000;
+        color: white;
+        border-radius: rem(40);
+    }
+}

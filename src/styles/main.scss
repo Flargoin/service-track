@@ -1,0 +1,57 @@
+@import 'settings/vars';
+
+/* Базовые стили */
+:root {
+  --color-text: #{$color-text};
+  --color-bg: #{$color-bg};
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  @media (prefers-reduced-motion: no-preference) {
+      scroll-behavior: smooth;
+  }
+
+  scroll-padding-top: 20vh;
+}
+
+body {
+  margin: 0;
+  font-family: "Clear Sans";
+  font-weight: 400;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+#app {
+  min-height: 100vh;
+}
+
+@import './settings/libs';
+@import 'settings/settings';
+
+@import './ui/main-text/titles';
+@import './ui/form/form';
+@import './ui/card/card';
+@import './ui/form/input';
+@import './ui/form/checkbox';
+@import './ui/buttons/buttons';
+@import './ui/links/links';
+
+// Blocks
+@import 'blocks/line';
+@import 'blocks/header';
+@import 'blocks/hero';
+@import 'blocks/our-clients';
+@import 'blocks/chars';
+@import 'blocks/rang';
+@import 'blocks/demo';
+@import 'blocks/_footer';
+
+@import 'blocks/functional';
+@import 'blocks/tarif';

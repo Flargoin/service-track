@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Одностраничный проект</title>
+    <link rel="stylesheet" href="/src/styles/main.scss" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="header section">
+        <div class="container header__container">
+          <a href="#" class="header__logo">
+            <picture>
+              <source srcset="./src/images/logo-desc.webp" media="(width >= 768px)" />
+              <img src="./src/images/logo-mob.webp" alt="MDN" />
+            </picture>
+          </a>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero section">
+          <div class="container hero__container">
+            <div class="section__header">
+              <div class="hero__image">
+                <img src="./src/images/banner.webp" alt="">
+              </div>
+            </div>
+  
+            <div class="section__body">
+              <h2 class="h2 h2--small hero__title">
+                Автоматизация для выездного обслуживания
+              </h2>
+  
+              <p class="hero__descr">
+                «Сервис Трек» — специализированная система, созданная специально для сервисных компаний, работающих в «полях» — на выезде к клиентам и оборудованию.
+              </p>
+            </div>
+          </div>
+        </section>
+  
+        <div class="line">
+          <span>Сервис Трек</span>
+          <div class="line__el"></div>
+        </div>
+  
+        <section class="our-clients section">
+          <div class="container our-clients__container">
+            <div class="section__header">
+              <h2 class="h2 our-clients__title">
+                Наши клиенты
+              </h2>
+            </div>
+  
+            <div class="section__body">
+              <ul class="our-clients__list">
+                <li class="our-clients__list-item advantage">
+                  <div class="advantage__icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                      <use href="./src/icons/sprite.svg#factory"></use>
+                    </svg>
+                  </div>
+                  <div class="advantage__num">01</div>
+                  <div class="advantage__text">
+                    Энергосбытовые 	компании, сервисное обслуживание энергетической отрасли
+                  </div>
+
+                  <div class="advantage__image">
+                    <img src="./src/images/our-clients/01.webp" alt="">
+                  </div>
+                </li>
+  
+                <li class="our-clients__list-item advantage">
+                  <div class="advantage__icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                      <use href="./src/icons/sprite.svg#cafe"></use>
+                    </svg>
+                  </div>
+                  <div class="advantage__num">02</div>
+                  <div class="advantage__text">Рестораны, кафе и 	точки общественного питания</div>
+
+                  <div class="advantage__image">
+                    <img src="./src/images/our-clients/02.webp" alt="">
+                  </div>
+                </li>
+  
+                <li class="our-clients__list-item advantage">
+                  <div class="advantage__icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                      <use href="./src/icons/sprite.svg#bussines"></use>
+                    </svg>
+                  </div>
+                  <div class="advantage__num">03</div>
+                  <div class="advantage__text">Обслуживание 	коммерческой недвижимости: бизнес-центры, 	офисы, торговые центры, склады, 	промышленные объекты</div>
+                  <div class="advantage__image">
+                    <img src="./src/images/our-clients/03.webp" alt="">
+                  </div>
+                </li>
+  
+                <li class="our-clients__list-item advantage">
+                  <div class="advantage__icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                      <use href="./src/icons/sprite.svg#farming"></use>
+                    </svg>
+                  </div>
+                  <div class="advantage__num">04</div>
+                  <div class="advantage__text">
+                    Жилищно-коммунальное хозяйство
+                  </div>
+                  <div class="advantage__image">
+                    <img src="./src/images/our-clients/04.webp" alt="">
+                  </div>
+                </li>
+  
+                <li class="our-clients__list-item advantage advantage--bottom">
+                  <div class="advantage__icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                      <use href="./src/icons/sprite.svg#it"></use>
+                    </svg>
+                  </div>
+                  <div class="advantage__num">05</div>
+                  <div class="advantage__text">ИТ-сервисы: 	аутсорсинг, интеграторы, 1С-франчайзи</div>
+                  <div class="advantage__image">
+                    <img src="./src/images/our-clients/05.webp" alt="">
+                  </div>
+                </li>
+  
+                <li class="our-clients__list-item advantage advantage--bottom">
+                  <div class="advantage__icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                      <use href="./src/icons/sprite.svg#nav"></use>
+                    </svg>
+                  </div>
+                  <div class="advantage__num">06</div>
+                  <div class="advantage__text">Внедрение систем 	навигации и мониторинга транспорта</div>
+                  <div class="advantage__image">
+                    <img src="./src/images/our-clients/06.webp" alt="">
+                  </div>
+                </li>
+  
+                <li class="our-clients__list-item advantage advantage--bottom">
+                  <div class="advantage__icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                      <use href="./src/icons/sprite.svg#sec"></use>
+                    </svg>
+                  </div>
+                  <div class="advantage__num">07</div>
+                  <div class="advantage__text">Обеспечение систем охраны и пожарной безопасности и многие 	другие</div>
+                  <div class="advantage__image">
+                    <img src="./src/images/our-clients/07.webp" alt="">
+                  </div>
+                </li>
+  
+                <li class="our-clients__list-item advantage advantage--bottom">
+                  <div class="advantage__icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                      <use href="./src/icons/sprite.svg#service"></use>
+                    </svg>
+                  </div>
+                  <div class="advantage__num">08</div>
+                  <div class="advantage__text">Внутренние сервисные службы крупных компаний с распределенной 	географией: ритейл, сетевые рестораны и производственные предприятия.</div>
+                  <div class="advantage__image">
+                    <img src="./src/images/our-clients/08.webp" alt="">
+                  </div>
+                </li>
+              </ul>
+  
+              <div class="our-clients__triggers">
+                <a href="#form" class="button">Стать Клиентом</a>
+              </div>
+  
+              <div class="h2 platform__title">
+                Платформа «Сервис Трек» — система, которая понимает ваш бизнес и помогает достигать новых высот в сервисном обслуживании!
+              </div>
+  
+              <p class="platform__text">
+                Если ваша компания работает по договорам с регламентами и SLA, то «Сервис Трек» станет вашим надежным партнером в обеспечении качественного и своевременного обслуживания.
+              </p>
+            </div>
+          </div>
+        </section>
+  
+  
+        <div class="line">
+          <span>Сервис Трек</span>
+          <div class="line__el"></div>
+        </div>
+
+        <section class="section rang">
+          <div class="container rang__container">
+            <div class="section__header">
+              <h2 class="h2 rang__title">
+                Класс программного обеспечения
+              </h2>
+            </div>
+  
+            <div class="section__body">
+              <p class="rang__text">
+                Приведенный выше функционал относится к классу систем управления обслуживанием (Field Service Management Software), а конкретнее — к тикет-системам (Ticketing Systems) и системам автоматизации сервисных процессов.
+              </p>
+  
+              <div class="swiper rang__slider">
+                <ul class="rang__list swiper-wrapper">
+                  <li class="rang__list-item swiper-slide">
+                    <div class="rang__list-item swiper-slide-img">
+                      <img src="" alt="">
+                    </div>
+                    <div class="rang__list-item swiper-slide-text">
+                      Если ваша компания работает по договорам с регламентами и SLA, то "Сервис Трек" станет вашим надежным партнером в обеспечении качественного и своевременного обслуживания.
+                    </div>
+                  </li>
+    
+                  <li class="rang__list-item swiper-slide">
+                    <div class="rang__list-item swiper-slide-img">
+                      <img src="" alt="">
+                    </div>
+                    <div class="rang__list-item swiper-slide-text">
+                      Система автоматизации 	бизнес-процессов — для настройки 	сценариев, шаблонов и автоматического 	распределения задач.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+  
+              <div class="rang__bottom-text">
+                Это комплексное <span>программное обеспечение</span> для поддержки сервисных операций, объединяющее функции планирования, логистики, автоматизации и контроля.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section--dark chars">
+          <div class="container chars__container">
+            <div class="section__header">
+              <h2 class="h2 chars__title">
+                Основные функциональные характеристики:
+              </h2>
+            </div>
+
+            <div class="section__body">
+              <ul class="chars__list">
+                <li class="chars__list-item">
+                  <div class="chars__list-item-text">
+                    Создание карточки заявки с возможностью просмотра данных по заявке и истории работ с ней
+                  </div>
+
+                  <div class="chars__list-item-img">
+                    <img src="./src/images/chars-img.webp" alt="">
+                  </div>
+                </li>
+                
+                <li class="chars__list-item">
+                  <div class="chars__list-item-text">
+                    Создание карточки заявки с возможностью просмотра данных по заявке и истории работ с ней
+                  </div>
+
+                  <div class="chars__list-item-img">
+                    <img src="./src/images/chars-img.webp" alt="">
+                  </div>
+                </li>
+
+                <li class="chars__list-item">
+                  <div class="chars__list-item-text">
+                    Создание карточки заявки с возможностью просмотра данных по заявке и истории работ с ней
+                  </div>
+
+                  <div class="chars__list-item-img">
+                    <img src="./src/images/chars-img.webp" alt="">
+                  </div>
+                </li>
+
+                <li class="chars__list-item">
+                  <div class="chars__list-item-text">
+                    Создание карточки заявки с возможностью просмотра данных по заявке и истории работ с ней
+                  </div>
+
+                  <div class="chars__list-item-img">
+                    <img src="./src/images/chars-img.webp" alt="">
+                  </div>
+                </li>
+
+                <li class="chars__list-item">
+                  <div class="chars__list-item-text">
+                    Создание карточки заявки с возможностью просмотра данных по заявке и истории работ с ней
+                  </div>
+
+                  <div class="chars__list-item-img">
+                    <img src="./src/images/chars-img.webp" alt="">
+                  </div>
+                </li>
+              </ul>
+
+              <a href="#form" class="button button--white">Отправить заявку</a>
+            </div>
+          </div>
+        </section>
+  
+        <section class="section functional">
+          <div class="container functional__container">
+            <div class="section__header">
+              <h2 class="h2 functional__title">Полный функционал, доступный для вас в том числе включает:</h2>
+            </div>
+    
+            <div class="section__body functional__content">
+              <ul class="functional__content-list">
+                <li>Создание 	заявок на выполнение работ</li>
+                <li>Возможность 	импортировать заявки из реестра в 	формате Excel</li>
+                <li>Назначение заявки в работу на сотрудника 	или группу сотрудников</li>
+                <li>Контроль исполнения заявки, просмотр 	текущего статуса заявки</li>
+                <li>Выгрузка заявки в  Excel</li>
+                <li>Выгрузка мультимедиа данных из заявки 	одним архивом</li>
+                <li>Возможность 	выгрузить мультимедиа данные на Яндекс. 	Диск.</li>
+                <li>Заведение 	заявки  в рамках контракта. Вы можете 	управлять как отдельной заявкой, так 	и контрактом в целом</li>
+                <li>Архивация заявки</li>
+                <li>Ведение склада 	материалов (В работе)</li>
+                <li>Отслеживание места 	совершения фотографий (метаданные)</li>
+                <li>Визуальный контроль за сроками 	исполнения контрактов (цветовая схема 	статуса сроков контракта)</li>
+                <li>Отображение данных 	(адреса заявок) на карте дашборда.</li>
+              </ul>
+            </div>
+  
+            <div class="form functional__form">
+                
+            <form id="form" class="form__block functional__form-el" id="application-form" novalidate>
+                <h3 class="h3 form__title functional__form-title">
+                  Обсудим все детали и разработаем план действий по внедрению <span>«Сервис Трек»</span> для вашего бизнеса
+                </h3>
+                <div class="form__inputs functional__form-inputs">
+                  <div class="input" data-field="phone">
+                    <input class="input__el" type="tel" id="phone-mask" name="phone" placeholder="Телефон*" autocomplete="tel">
+                    <span class="input__error" role="alert" aria-live="polite"></span>
+                  </div>
+  
+                  <div class="input" data-field="name">
+                    <input type="text" class="input__el" name="name" placeholder="Ваше имя*" autocomplete="name">
+                    <span class="input__error" role="alert" aria-live="polite"></span>
+                  </div>
+  
+                  <div class="input" data-field="email">
+                    <input type="email" class="input__el" name="email" placeholder="E-mail*" autocomplete="email">
+                    <span class="input__error" role="alert" aria-live="polite"></span>
+                  </div>
+  
+                  <div class="input" data-field="company">
+                    <input type="text" class="input__el" name="company" placeholder="Компания" autocomplete="organization">
+                    <span class="input__error" role="alert" aria-live="polite"></span>
+                  </div>
+                </div>
+  
+                <div class="form__triggers">
+                  <button onclick="(e) => {e.preventDefault()}" class="button functional__form-btn">
+                    Отправить заявку
+                  </button>
+                </div>
+  
+                <div class="checkbox form__policy functional__form-policy" data-field="policy">
+                  <div class="checkbox__input">
+                    <input type="checkbox" name="policy" id="policy-checkbox">
+                  </div>
+  
+                  <div class="form__checkbox-text">
+                    Ознакомлен с <a href="#">Политикой обработки персональных данных</a> и согласен на их обработку
+                  </div>
+                  <span class="form__policy-error input__error" role="alert" aria-live="polite"></span>
+                </div>
+            </form>
+            </div>
+          </div>
+        </section>
+  
+        <section class="section tarif">
+          <div class="container tarif__container">
+            <div class="section__header">
+              <h2 class="h2 tarif__title">
+                Тарифные планы Сервис Трек
+              </h2>
+            </div>
+  
+            <div class="section__body tarif__content swiper">
+              <ul class="tarif__list swiper-wrapper">
+                <li class="tarif__list-item swiper-slide">
+                  <article class="tarif__list-card card">
+                    <img class="card__bg" src="./src/images/bg.png" alt="">
+                    <h3 class="h3 card__title tarif__list-card-title">
+                      Старт
+                    </h3>
+  
+                    <div class="card__price tarif__list-card-price">
+                      8 000₽<span>/мес</span>
+                    </div>
+  
+                    <div class="card__descr">
+                      Для небольших масштабов автоматизации
+                    </div>
+  
+                    <a href="#" class="button button--mini card__btn" download>скачать тарифы</a>
+  
+                    <ul class="card__advantages">
+                      <li class="card__advantage">
+                        <div class="card__advantage-value card__advantage-value--green">
+                          1
+                        </div>
+                        <div class="card__advantage-descr">
+                          ГБ Дискового пространства архивных данных
+                        </div>
+                      </li>
+                      <li class="card__advantage">
+                        <div class="card__advantage-value">
+                          -
+                        </div>
+                        <div class="card__advantage-descr">
+                          Дополнительное дисковое пространство
+                        </div>
+                      </li>
+                      <li class="card__advantage">
+                        <div class="card__advantage-value card__advantage-value--green">
+                          +
+                        </div>
+                        <div class="card__advantage-descr">
+                          Доступ к полному функционалу платформы
+                        </div>
+                      </li>
+                    </ul>
+  
+                    <div class="card__ps">
+                      Цена указана при условии оформления подписки на 12 месяцев*
+                    </div>
+                  </article>
+                </li>
+  
+                <li class="tarif__list-item swiper-slide">
+                  <article class="tarif__list-card card">
+                    <img class="card__bg" src="./src/images/bg.png" alt="">
+                    <h3 class="h3 card__title tarif__list-card-title">
+                      Профи
+                    </h3>
+  
+                    <div class="card__price tarif__list-card-price">
+                      16 000₽<span>/мес</span>
+                    </div>
+  
+                    <div class="card__descr">
+                      Для продвинутой автоматизации
+                    </div>
+  
+                    <a href="#" class="button button--mini card__btn" download>скачать тарифы</a>
+  
+                    <ul class="card__advantages">
+                      <li class="card__advantage">
+                        <div class="card__advantage-value card__advantage-value--green">
+                          5
+                        </div>
+                        <div class="card__advantage-descr">
+                          ГБ Дискового пространства архивных данных
+                        </div>
+                      </li>
+                      <li class="card__advantage">
+                        <div class="card__advantage-value">
+                          -
+                        </div>
+                        <div class="card__advantage-descr">
+                          Дополнительное дисковое пространство
+                        </div>
+                      </li>
+                      <li class="card__advantage">
+                        <div class="card__advantage-value card__advantage-value--green">
+                          +
+                        </div>
+                        <div class="card__advantage-descr">
+                          Доступ к полному функционалу платформы
+                        </div>
+                      </li>
+                    </ul>
+  
+                    <div class="card__ps">
+                      Цена указана при условии оформления подписки на 12 месяцев*
+                    </div>
+                  </article>
+                </li>
+  
+                <li class="tarif__list-item swiper-slide">
+                  <article class="tarif__list-card card">
+                    <img class="card__bg" src="./src/images/bg.png" alt="">
+                    <h3 class="h3 card__title tarif__list-card-title">
+                      Эксперт
+                    </h3>
+  
+                    <div class="card__price tarif__list-card-price">
+                      40 000₽<span>/мес</span>
+                    </div>
+  
+                    <div class="card__descr">
+                      Автоматизация больших бизнес процессов
+                    </div>
+  
+                    <a href="#" class="button button--mini card__btn" download>скачать тарифы</a>
+  
+                    <ul class="card__advantages">
+                      <li class="card__advantage">
+                        <div class="card__advantage-value card__advantage-value--green">
+                          10
+                        </div>
+                        <div class="card__advantage-descr">
+                          ГБ Дискового пространства архивных данных
+                        </div>
+                      </li>
+                      <li class="card__advantage">
+                        <div class="card__advantage-value card__advantage-value--green">
+                          +
+                        </div>
+                        <div class="card__advantage-descr">
+                          Дополнительное дисковое пространство
+                        </div>
+                      </li>
+                      <li class="card__advantage">
+                        <div class="card__advantage-value card__advantage-value--green">
+                          +
+                        </div>
+                        <div class="card__advantage-descr">
+                          Доступ к полному функционалу платформы
+                        </div>
+                      </li>
+                    </ul>
+  
+                    <div class="card__ps">
+                      Цена указана при условии оформления подписки на 12 месяцев*
+                    </div>
+                  </article>
+                </li>
+  
+                <li class="tarif__list-item swiper-slide">
+                  <article class="tarif__list-card card">
+                    <img class="card__bg" src="./src/images/bg-vip.png" alt="">
+                    <h3 class="h3 card__title tarif__list-card-title">
+                      Корпорация
+                    </h3>
+  
+                    <div class="card__price tarif__list-card-price">
+                      80 000₽<span>/мес</span>
+                    </div>
+  
+                    <div class="card__descr">
+                      Персональный подход для бизнеса 
+                    </div>
+  
+                    <a href="#" class="button button--mini card__btn" download>скачать тарифы</a>
+  
+                    <ul class="card__advantages">
+                      <li class="card__advantage">
+                        <div class="card__advantage-value card__advantage-value--green">
+                          20
+                        </div>
+                        <div class="card__advantage-descr">
+                          ГБ Дискового пространства архивных данных
+                        </div>
+                      </li>
+                      <li class="card__advantage">
+                        <div class="card__advantage-value card__advantage-value--green">
+                          +
+                        </div>
+                        <div class="card__advantage-descr">
+                          Дополнительное дисковое пространство
+                        </div>
+                      </li>
+                      <li class="card__advantage">
+                        <div class="card__advantage-value card__advantage-value--green">
+                          +
+                        </div>
+                        <div class="card__advantage-descr">
+                          Доступ к полному функционалу платформы
+                        </div>
+                      </li>
+                    </ul>
+  
+                    <div class="card__ps">
+                      Цена указана при условии оформления подписки на 12 месяцев*
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="demo">
+          <div class="container demo__container">
+            <div class="demo__block">
+              <button class="button">Попробовать бесплатно</button>
+
+              <p class="demo__text">Предоставим вам демо-доступ на14 дней</p>
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <div class="footer__bg">
+            <img src="./src/images/footer-bg.webp" alt="">
+          </div>
+          <div class="container footer__container">
+            <div class="footer__column">
+              <ul class="footer__column-list">
+                <li class="footer__column-item">
+                  <a href="#" class="footer__column-link footer__column-link--h link">
+                    <div class="button">PDF</div>
+                    <span>презентация компании</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__column">
+              <ul class="footer__column-list">
+                <li class="footer__column-item">
+                  <a href="tel:79629361462" class="footer__column-link link">
+                    +7 962-936-1462
+                  </a>
+                </li>
+
+                <li class="footer__column-item">
+                  <a href="mailto:sale@scoutlab.ru" class="footer__column-link link">
+                    sale@scoutlab.ru
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__column">
+              <ul class="footer__column-list">
+                <li class="footer__column-item">
+                  ИНН: 9725074461
+                </li>
+
+                <li class="footer__column-item">
+                  КПП: 772501001
+                </li>
+
+                <li class="footer__column-item">
+                  ОГРН: 1227700074920
+                </li>
+
+                <li class="footer__column-item">
+                  Юр. адрес: <address>115114, РОССИЯ, Г. МОСКВА, МУНИЦИПАЛЬНЫЙ ОКРУГ ДАНИЛОВСКИЙ ВН.ТЕР.Г., ДЕРБЕНЕВСКАЯ НАБ., Д. 7, СТР. 2, ПОМЕЩ. I, КОМ. 13</address>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </main>
+
+
+    </div>
+    <script src="https://unpkg.com/imask"></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

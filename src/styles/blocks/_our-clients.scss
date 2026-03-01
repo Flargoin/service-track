@@ -1,0 +1,200 @@
+.our-clients {
+    @media(min-width: rem(320)) {
+        &__container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-auto-rows: max-content;
+            gap: rem(24);
+
+            .section__header {
+                grid-column: span 12;
+            }
+
+            .section__body {
+                grid-column: span 12;
+                display: flex;
+                flex-direction: column;
+                gap: rem(24);
+            }
+        }
+    
+        &__list {
+            display: flex;
+            flex-direction: column;
+            gap: rem(20);
+    
+            &-item {
+                display: flex;
+                align-items: center;
+                gap: rem(12);
+                // justify-content: space-between;
+            }
+        }
+
+        &__triggers {
+            display: flex;
+        }
+    }
+
+    @media(min-width: rem(768)) {
+        .section__body {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-auto-rows: max-content;
+            gap: rem(24);
+        }
+
+        &__list {
+            grid-column: 5/12;
+            grid-row: 1/2;
+
+            &-item {
+                padding: rem(6) rem(15);
+                gap: rem(24);
+                border-radius: rem(40);
+                transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+                cursor: pointer;
+                
+
+                @media(hover:hover) {
+                    &:hover {
+                        background-color: #F9575A;
+                        color: #fff;
+
+                        .advantage__icon {
+                            background-color: transparent;
+
+                            svg {
+                                fill: white;
+                            }
+                        }
+
+                        .advantage__num {
+                            color: #C43B3C;
+                        }
+
+                        .advantage__image {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__triggers {
+            grid-column: span 4;
+            grid-row: 2/3;
+
+            .button {
+                width: 100%;
+            }
+        }
+
+        .platform__title {
+            grid-column: 5/12;
+            grid-row: 2/3;
+        }
+
+        .platform__text {
+            grid-column: span 12;
+            grid-row: 3/4;
+        }
+    }
+}
+
+.advantage {
+    @media(min-width: rem(320)) {
+        &__icon {
+            flex-shrink: 0;
+            width: rem(24);
+            height: rem(24);
+            transition: background-color 0.2s ease-in-out;
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &__num {
+            font-family: "Neutral Face";
+            font-size: rem(30);
+            font-weight: 700;
+            color: $color-accent-coral;
+            transition: color .2s ease-in-out;
+        }
+
+        &__text {
+           font-size: rem(14);
+        }
+
+        &__image {
+            display: none;
+        }
+    }
+
+    @media(min-width: 768px) {
+        position: relative;
+
+        &__icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border-radius: rem(40);
+            background-color: #C7CDD3;
+            width: rem(56);
+            height: rem(48);
+
+            svg {
+                width: rem(24);   
+                position: relative;
+                z-index: 2;
+            }
+
+            // &::after {
+            //     content: '';
+            //     position: absolute;
+            //     top: 50%;
+            //     left: 50%;
+            //     transform: translate(-50%, -50%);
+            //     width: rem(56);
+            //     height: rem(45);
+            //     border-radius: rem(40);
+            //     background-color: #C7CDD3;
+            //     z-index: 1;
+            // }
+        }
+
+        &__num {
+            color: #C7CDD3;
+        }
+
+        &__image {
+            position: absolute;
+            display: block;
+            top: 0;
+            right: calc(100% + 5px);
+            max-width: 315px;
+            width: 100%;
+            opacity: 0;
+            visibility: hidden;
+            border-radius: 40px;
+            overflow: hidden;
+            transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &--bottom {
+            .advantage__image {
+                top: auto;
+                bottom: 0;
+            }
+        }
+    }
+}

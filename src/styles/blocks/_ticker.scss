@@ -1,0 +1,43 @@
+/**
+ * Бегущая строка (ticker)
+ * CSS-анимация, бесшовный цикл, учёт prefers-reduced-motion
+ */
+.ticker {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  user-select: none;
+  background-color: $color-ticker-bg;
+  padding: rem(10) 0;
+  font-size: rem(24);
+  font-weight: 500;
+  letter-spacing: -0.005em;
+  text-transform: uppercase;
+}
+
+.ticker__inner {
+  display: inline-flex;
+  animation: ticker-scroll 10s linear infinite;
+}
+
+.ticker__text {
+  flex-shrink: 0;
+  min-width: 100%;
+  padding-right: 0.25em;
+}
+
+/* Пауза анимации для пользователей с «уменьшить движение» */
+@media (prefers-reduced-motion: reduce) {
+  .ticker__inner {
+    animation: none;
+  }
+}
+
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,42 @@
+.checkbox {
+    &__input input {
+        position: relative;
+        display: block;
+        width: rem(21);
+        height: rem(21);
+        border-radius: rem(20);
+        flex-shrink: 0;
+        z-index: 1;
+        background-color: transparent;
+
+        
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            display: block;
+            width: rem(21);
+            height: rem(21);
+            overflow: hidden;
+            border: rem(2) solid $color-white;
+            border-radius: rem(5);
+            background-color: $color-text;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+        }
+
+        @media(hover:hover) {
+            &:hover::after {
+                border-color: $color-text;
+            }
+        }
+
+        
+        &:checked {
+            &::after {
+                border-color: $color-text;
+                background-color: $color-success;
+            }
+        }
+    }
+}

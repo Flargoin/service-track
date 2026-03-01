@@ -1,0 +1,8 @@
+// Шрифт текстов
+@include font-face("Clear Sans", "ClearSans", "ClearSans-Medium", 500, normal);
+@include font-face("Clear Sans", "ClearSans", "ClearSans-Bold", 700, normal);
+@include font-face("Clear Sans", "ClearSans", "ClearSans", 400, normal);
+
+// Шрифт заголовков
+@include font-face("Neutral Face", "NeutralFace", "NeutralFaceBold", 700, normal);
+@include font-face("Neutral Face", "NeutralFace", "NeutralFaceRegular", 400, normal);

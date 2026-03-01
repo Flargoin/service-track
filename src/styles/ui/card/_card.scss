@@ -1,0 +1,70 @@
+.card {
+    position: relative;
+    font-family: "Clear Sans";
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: rem(20);
+    padding: rem(25) rem(15);
+    background-color: $color-white;
+    border-radius: rem(48);
+    overflow: hidden;
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        border-radius: rem(48);
+        z-index: 1;
+        max-height: rem(260);
+        height: 100%;
+    }
+
+    & *:not(.card__bg) {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__descr {
+        min-height: rem(55);
+    }
+
+    &__advantages {
+        display: flex;
+        flex-direction: column;
+        gap: rem(10);
+    }
+
+    &__advantage {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: rem(20);
+
+        &-value {
+            font-family: "Neutral Face";
+            font-size: rem(20);
+            font-weight: 700;
+            
+            &--green {
+                color: $color-success;
+            }
+        }
+
+        &-descr {
+            font-size: rem(16);
+        }
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    &__ps {
+        font-size: rem(14);
+    }
+}

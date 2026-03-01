@@ -1,0 +1,39 @@
+.button {
+    font-family: "Neutral face";
+    font-weight: 700;
+    font-size: rem(16);
+    padding: rem(24) rem(27);
+    color: $color-white;
+    background-color: $color-text;
+    border-radius: rem(48);
+    text-transform: uppercase;
+    transition: border-radius 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    height: max-content;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media(hover:hover) {
+        &:hover {
+            border-radius: rem(20);
+            background-color: $color-accent;
+        }
+    }
+
+    &--mini {
+        padding: rem(17) rem(14);
+        font-size: rem(13);
+        
+        @media(hover: hover) {
+          &:hover {
+            border-radius: rem(10);
+          }
+        }
+    }
+
+    &--white {
+      background-color: white;
+      color: #000;
+    }
+}

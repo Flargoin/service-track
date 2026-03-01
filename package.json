@@ -1,0 +1,31 @@
+{
+  "name": "prj",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.15.0",
+    "globals": "^15.12.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.10",
+    "postcss": "^8.4.49",
+    "sass": "^1.81.0",
+    "vite": "^6.0.3"
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix"
+  },
+  "dependencies": {
+    "swiper": "^12.0.3"
+  }
+}

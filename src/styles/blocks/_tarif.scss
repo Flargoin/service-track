@@ -1,0 +1,56 @@
+.tarif {
+    @media(min-width: rem(320)) {
+        overflow: hidden;
+
+        .section__header {
+            margin-bottom: rem(25);
+        }
+    
+        &__list{
+            &-item {
+                &:last-child {
+                    .card {
+                        color: $color-white;
+                        background: linear-gradient(180deg, $color-gradient-start 0%, $color-gradient-end 100%);
+                    }
+                }
+            }
+    
+            &-card {
+                &-title {
+                    font-family: "Clear Sans";
+                    font-size: rem(20);
+                    text-transform: unset;
+                }
+    
+                &-price {
+                    position: relative;
+                    font-family: "Neutral Face";
+                    max-width: max-content;
+                    font-size: rem(30);
+                    font-weight: bold;
+    
+                    span {
+                        position: relative;
+                        top: -35%;
+                        font-family: "Clear Sans";
+                        font-size: rem(16);
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    
+        &__content.swiper {
+            overflow: visible;
+        }
+    }
+
+    @media(min-width: rem(768)) {
+        &__list.swiper-wrapper {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: rem(25);
+        }
+    }
+}

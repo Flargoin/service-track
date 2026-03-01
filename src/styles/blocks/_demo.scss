@@ -1,0 +1,21 @@
+.demo {
+    &__block {
+        display: flex;
+        align-items: center;
+        gap: rem(55);
+        padding: rem(32) rem(24);
+        background-color: #D9D9D9;
+        border-radius: rem(48);
+    }
+
+    @media(max-width: 768px) {
+        &__block {
+            flex-direction: column-reverse;
+            gap: rem(24);
+
+            .button {
+                width: 100%;
+            }
+        }
+    }
+}
