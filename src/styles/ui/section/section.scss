@@ -1,5 +1,5 @@
 .section {
-    margin-bottom: rem(24);
+    margin-bottom: rem(32);
     @media(min-width: rem(320)) {
         &:not(:first-child) {
             margin-top: rem(25);

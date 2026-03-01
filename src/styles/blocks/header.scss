@@ -1,8 +1,14 @@
 .header {
     @media(min-width: rem(320)) {
-        padding: rem(10) 0;
+        &__container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: rem(10);
+        }
+        padding-top: rem(10);
 
         &__logo {
+            grid-column: span 12;
             position: static;
             display: flex;
             align-items: center;
@@ -19,9 +25,8 @@
 
     @media(min-width: rem(768)) {
         &__logo {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
+            grid-column: span 7;
+            justify-content: flex-start;
         }
     }
 }

@@ -11,15 +11,11 @@
             border-radius: rem(3);
         }
     
-        span {
+        svg {
             position: absolute;
+            display: block;
             left: rem(40);
             width: max-content;
-            font-family: 'Neutral Face';
-            text-transform: uppercase;
-            font-weight: 700;
-            font-size: rem(10);
-            letter-spacing: rem(0.7);
             text-align: center;
             background-color: var(--color-bg);
             padding: 0 rem(5);
@@ -28,8 +24,8 @@
     }
 
     @media(min-width: rem(1024)) {
-        span {
-            left: 40%;
+        svg {
+            left: 46.1%;
         }
     }
 }

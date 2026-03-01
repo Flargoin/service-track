@@ -37,6 +37,10 @@
         @media(min-width: rem(320)) {
             font-size: rem(20);
         }
+
+        @media(min-width: rem(768)) {
+            font-size: rem(32);
+        }
     }
 }
 

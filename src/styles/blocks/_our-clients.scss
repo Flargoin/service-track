@@ -14,14 +14,14 @@
                 grid-column: span 12;
                 display: flex;
                 flex-direction: column;
-                gap: rem(24);
+                gap: rem(10);
             }
         }
     
         &__list {
             display: flex;
             flex-direction: column;
-            gap: rem(20);
+            gap: rem(5);
     
             &-item {
                 display: flex;
@@ -41,7 +41,8 @@
             display: grid;
             grid-template-columns: repeat(12, 1fr);
             grid-auto-rows: max-content;
-            gap: rem(24);
+            row-gap: 18px;
+            column-gap: 8px;
         }
 
         &__list {
@@ -50,7 +51,7 @@
 
             &-item {
                 padding: rem(6) rem(15);
-                gap: rem(24);
+                gap: rem(30);
                 border-radius: rem(40);
                 transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
                 cursor: pointer;
@@ -87,11 +88,14 @@
             grid-row: 2/3;
 
             .button {
+                max-width: 420px;
                 width: 100%;
+                height: 96px;
             }
         }
 
         .platform__title {
+            font-size: rem(32);
             grid-column: 5/12;
             grid-row: 2/3;
         }
@@ -164,6 +168,10 @@
             //     background-color: #C7CDD3;
             //     z-index: 1;
             // }
+        }
+
+        &__text {
+            font-size: rem(20);
         }
 
         &__num {
