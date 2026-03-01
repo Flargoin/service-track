@@ -31,7 +31,7 @@
             grid-column: span 12;
             gap: rem(24);
 
-            &-item.swiper-slide {
+            &-item {
                 display: flex;
                 flex-direction: column;
                 gap: rem(10);
@@ -90,7 +90,6 @@
 
         &__list {
             &-item.swiper-slide {
-                display: block;
                 flex-shrink: 1;
             }
         }
