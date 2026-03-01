@@ -37,6 +37,10 @@
                 gap: rem(10);
                 // width: 49%;
 
+                &.swiper-slide {
+                    height: auto;
+                }
+
                 &-img {
                     max-height: 288px;
                     width: 100%;
@@ -91,6 +95,7 @@
         &__list {
             &-item.swiper-slide {
                 flex-shrink: 1;
+                height: 100%;
             }
         }
 
