@@ -103,7 +103,7 @@ if(window.innerWidth <= 991) {
 
 if(window.innerWidth < 1024) {
   const tarifsSlider = new Swiper('.tarif__content', {
-
+    spaceBetween: 10,
     breakpoints: {
      320: {
        slidesPerView: 1.5,
